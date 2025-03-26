@@ -23,7 +23,7 @@ const JobCard = ({ job }) => {
   const [showSharePopup, setShowSharePopup] = useState(false);
 
   const handleShare = () => {
-    const shareUrl = `https://hyred.com/jobs/${job.id}`;
+    const shareUrl = `https://hyerd.com/jobs/${job.id}`;
     navigator.clipboard.writeText(shareUrl).then(() => {
       setShowSharePopup(true);
       setTimeout(() => {
@@ -225,7 +225,7 @@ const PageHeader = () => {
         <div className="flex items-center space-x-4 mb-6">
           <Rocket size={40} className="text-yellow-400" />
           <h1 className="text-5xl font-extrabold tracking-tight bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-500">
-            Hyred
+            hyerd
           </h1>
         </div>
         <p className="text-xl max-w-3xl text-gray-200 leading-relaxed font-medium">
